@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "name": "Sample",
+  "grid": {"cols": 64, "rows": 48},
+  "start": "home",
+  "theme": {
+    "background": {"image": "assets/dusk.svg", "color": "#141a5c", "dim": 0.04},
+    "tile": {"fill": "rgba(255,255,255,.15)", "radius": 22, "gap": 5, "glass": true}
+  },
+  "rooms": {"office": {"group": "light.office_lights"}},
+  "pages": [
+    {"id": "home", "name": "Home", "tiles": [
+      {"type": "clock", "x": 2, "y": 2, "w": 24, "h": 13, "flat": true},
+      {"type": "weather", "x": 2, "y": 15, "w": 14, "h": 6, "entity": "weather.forecast"},
+      {"type": "entity", "x": 2, "y": 22, "w": 10, "h": 8, "entity": "light.porch", "name": "Porch", "icon": "lightbulb"},
+      {"type": "action", "x": 12, "y": 22, "w": 10, "h": 8, "service": "scene.turn_on", "entity": "scene.movie", "name": "Movie", "label": "Scene", "icon": "star"},
+      {"type": "room", "x": 2, "y": 31, "w": 12, "h": 8, "area": "office", "icon": "monitor"},
+      {"type": "camera", "x": 44, "y": 2, "w": 18, "h": 12, "entity": "camera.front_door", "video": false}
+    ]}
+  ]
+}

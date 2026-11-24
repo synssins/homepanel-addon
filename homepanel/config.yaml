@@ -1,0 +1,16 @@
+name: HomePanel Studio
+version: "0.1.0"
+slug: homepanel
+description: Design wall-tablet dashboards on a grid and serve them to HomePanel tablets
+url: https://github.com/synssins/HomePanel
+arch:
+  - amd64
+  - aarch64
+init: false
+# Host network: tablets find the server over mDNS, which does not cross the add-on network bridge.
+host_network: true
+ingress: true
+ingress_port: 8722
+panel_title: HomePanel
+panel_icon: mdi:tablet-dashboard
+homeassistant_api: true

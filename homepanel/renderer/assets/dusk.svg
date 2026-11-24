@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a5c"/><stop offset=".3" stop-color="#3f2a96"/><stop offset=".52" stop-color="#a8349a"/>
+      <stop offset=".68" stop-color="#ff5e7a"/><stop offset=".8" stop-color="#ff9a4d"/><stop offset=".9" stop-color="#ffd27a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff6cf" stop-opacity=".95"/><stop offset=".25" stop-color="#ffd27a" stop-opacity=".55"/><stop offset="1" stop-color="#ff8a4d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb46a"/><stop offset=".25" stop-color="#e2557f"/><stop offset=".6" stop-color="#5a2f96"/><stop offset="1" stop-color="#131849"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e4aa8"/><stop offset="1" stop-color="#c0527f"/></linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b2f8f"/><stop offset="1" stop-color="#7a3f95"/></linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1b5a"/><stop offset="1" stop-color="#33246f"/></linearGradient>
+  </defs>
+  <rect width="1024" height="768" fill="url(#sky)"/>
+  <g fill="#fff">
+    <circle cx="90" cy="60" r="1.6" opacity=".9"/><circle cx="210" cy="130" r="1.1" opacity=".7"/><circle cx="330" cy="48" r="1.4" opacity=".8"/>
+    <circle cx="470" cy="96" r="1" opacity=".6"/><circle cx="560" cy="34" r="1.7" opacity=".9"/><circle cx="660" cy="120" r="1.1" opacity=".6"/>
+    <circle cx="790" cy="58" r="1.5" opacity=".85"/><circle cx="900" cy="140" r="1" opacity=".6"/><circle cx="970" cy="70" r="1.3" opacity=".75"/>
+    <circle cx="140" cy="210" r="1" opacity=".5"/><circle cx="410" cy="190" r="1.2" opacity=".5"/><circle cx="850" cy="220" r=".9" opacity=".45"/>
+  </g>
+  <circle cx="690" cy="520" r="300" fill="url(#glow)"/>
+  <circle cx="690" cy="520" r="44" fill="#fff3c8"/>
+  <path d="M0,470 L90,420 L170,455 L260,380 L350,440 L430,400 L520,460 L610,410 L700,455 L790,395 L880,450 L960,415 L1024,445 L1024,560 L0,560Z" fill="url(#far)" opacity=".85"/>
+  <path d="M0,520 L70,480 L150,510 L240,450 L330,505 L420,470 L500,515 L600,480 L690,525 L780,470 L860,510 L940,475 L1024,505 L1024,580 L0,580Z" fill="url(#mid)"/>
+  <rect y="560" width="1024" height="208" fill="url(#lake)"/>
+  <g fill="#fff0c0">
+    <ellipse cx="690" cy="578" rx="150" ry="3.2" opacity=".75"/><ellipse cx="690" cy="596" rx="110" ry="2.8" opacity=".6"/>
+    <ellipse cx="690" cy="616" rx="84" ry="2.6" opacity=".48"/><ellipse cx="690" cy="640" rx="60" ry="2.4" opacity=".36"/>
+    <ellipse cx="690" cy="668" rx="40" ry="2.2" opacity=".26"/><ellipse cx="690" cy="700" rx="26" ry="2" opacity=".18"/>
+  </g>
+  <path d="M0,585 L60,545 L130,570 L200,530 L270,566 L330,548 L400,580 L1024,580 L1024,585 L0,585Z" fill="url(#near)"/>
+  <g fill="#120f38">
+    <path d="M40,640 l22,-70 l22,70z M52,600 l10,-52 l10,52z M100,660 l28,-96 l28,96z M116,604 l12,-60 l12,60z M0,768 L0,640 L200,668 L260,768Z"/>
+    <path d="M900,650 l24,-84 l24,84z M914,600 l10,-56 l10,56z M960,668 l30,-110 l30,110z M976,604 l14,-66 l14,66z M1024,768 L1024,650 L850,680 L790,768Z"/>
+  </g>
+</svg>
